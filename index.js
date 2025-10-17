@@ -91,7 +91,7 @@ const TabBar = ({ theme, activeCategory, onPress, width }) => {
             style={{
               textAlign: "center",
               paddingBottom: 8,
-              fontSize: Math.max(tabSize - 24, 18)
+              fontSize: Math.max(12, tabSize - 24)
             }}
           >
             {category.symbol}
@@ -112,7 +112,7 @@ const EmojiCell = ({ emoji, colSize, ...other }) => (
     }}
     {...other}
   >
-    <Text style={{ color: "#FFFFFF", fontSize: Math.max(colSize - 12, 6) }}>
+    <Text style={{ color: "#FFFFFF", fontSize: Math.max(12, colSize - 12) }}>
       {charFromEmojiObject(emoji)}
     </Text>
   </TouchableOpacity>
